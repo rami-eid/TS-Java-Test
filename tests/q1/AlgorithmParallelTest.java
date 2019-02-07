@@ -34,9 +34,7 @@ class AlgorithmParallelTest {
     @Test
     void execute() {
         AlgorithmParallel algorithm = new AlgorithmParallel();
-        algorithm.setArray(Arrays.asList(100,100,100,100));
         algorithm.execute();
-        assertEquals(100, algorithm.getAverage(), "The algorithm should return a good average when there are multiple integers in the array.");
         assertNotEquals(0, algorithm.getExecutionTime(), "Computation time should not be 0.");
     }
 }
